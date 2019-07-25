@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_border"
+    android:gravity="center_vertical|center_horizontal"
+    android:maxHeight="700dp"
+    android:maxWidth="400dp"
+    android:minWidth="300dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_brown_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="10dp"
+            android:text="Generate"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/txt_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:gravity="left|center_vertical"
+                android:text="Save file as"
+                android:textColor="@color/orange"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/file_spinner"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-100dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/dialog_editext_border"
+                android:drawableRight="@drawable/dropdown"
+                android:gravity="center_vertical|fill_vertical"
+                android:text="PDF"
+                android:textAlignment="center"
+                android:textColor="@color/brown"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/txt_clue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:gravity="left|center_vertical"
+                android:text="No of clues per sheet"
+                android:textColor="@color/orange"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/clue_spinner"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-100dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/dialog_editext_border"
+                android:drawableRight="@drawable/dropdown"
+                android:gravity="center_vertical|fill_vertical"
+                android:text="2"
+                android:textAlignment="center"
+                android:textColor="@color/brown"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/txt_encrypt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                android:gravity="left|center_vertical"
+                android:text="Encrypt clues"
+                android:textColor="@color/orange"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-100dp"
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/brown"
+                    app:buttonTint="@color/orange" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/text_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_brown_border"
+        android:text="Ok"
+        android:textColor="#ffffffff"
+        android:textSize="24sp" />
+
+
+
+</LinearLayout>

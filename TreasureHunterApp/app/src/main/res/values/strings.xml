@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Treasure Hunt - Original App</string>
+    <string name="Add">Add</string>
+
+    <string-array name="file">
+    <item>PDF</item>
+    <item>Doc</item>
+    </string-array>
+
+    <string-array name="file_nos">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+</resources>

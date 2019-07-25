@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <pl.hypeapp.materialtimelineview.MaterialTimelineView
+        android:id="@+id/material_timeline_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:timeline_bottom_radio_color="@color/brown"
+        app:timeline_line_color="@color/brown"
+        app:timeline_margin_start="32dp"
+        app:timeline_position="middle"
+        app:timeline_radio_outline_radius="15"
+        app:timeline_radio_radius="11"
+        app:timeline_top_radio_color="@color/brown"
+        app:timeline_type="line">
+
+        <TextView
+            android:layout_width="368dp"
+            android:layout_height="0dp"
+            android:elevation="1dp"
+            android:maxLines="4"
+            android:paddingBottom="7dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="7dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45"
+            tools:layout_editor_absoluteX="-18dp" />
+
+    </pl.hypeapp.materialtimelineview.MaterialTimelineView>
+
+    <pl.hypeapp.materialtimelineview.MaterialTimelineView
+        android:id="@+id/material_timeline_view2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_orange_border"
+        app:timeline_line_color="@color/brown"
+        app:timeline_margin_start="32dp"
+        app:timeline_position="last"
+        app:timeline_radio_outline_radius="15"
+        app:timeline_radio_radius="11"
+        app:timeline_top_radio_color="@color/brown"
+        app:timeline_type="item">
+
+        <TextView
+            android:id="@+id/hint_txt"
+            android:layout_width="368dp"
+            android:layout_height="0dp"
+            android:elevation="1dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLines="3"
+            android:paddingBottom="7dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="7dp"
+            android:text="- - ! - -"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45"
+            tools:layout_editor_absoluteX="-18dp" />
+
+
+    </pl.hypeapp.materialtimelineview.MaterialTimelineView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+</LinearLayout>
